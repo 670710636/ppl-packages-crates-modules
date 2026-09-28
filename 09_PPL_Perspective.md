@@ -26,7 +26,7 @@ use crate::food::order;
 
 fn main() {
     order();
-}
+}```
 
 ### 9.2 Semantics
 
