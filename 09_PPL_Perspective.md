@@ -40,8 +40,6 @@ fn main() {
     - order → Item ที่อยู่ใน food เช่น Function order()
 - `order()` จึงสามารถถูกเรียกใช้ใน `main()` ได้โดยไม่ต้องเขียน Path เต็ม
 
-ดังนั้น Syntax ของ Module System ทำให้ Programmer สามารถกำหนดโครงสร้างและการเข้าถึงส่วนต่าง ๆ ของโปรแกรมได้อย่างชัดเจน
-
 ---
 
 ### 9.2 Semantics
