@@ -34,6 +34,10 @@ fn main() {
 - `mod food` สร้าง Module ชื่อ `food`
 - `pub fn order()` กำหนดให้ Function `order()` สามารถเข้าถึงจากภายนอก Module ได้
 - `use crate::food::order` นำ Function `order` เข้ามาใน Scope ปัจจุบัน
+    use → นำชื่อเข้ามาใน Scope ปัจจุบัน
+    crate → เริ่มค้นหาจาก Crate ปัจจุบัน
+    food → Module ชื่อ food
+    order → Item ที่อยู่ใน food เช่น Function order()
 - `order()` จึงสามารถถูกเรียกใช้ใน `main()` ได้โดยไม่ต้องเขียน Path เต็ม
 
 ดังนั้น Syntax ของ Module System ทำให้ Programmer สามารถกำหนดโครงสร้างและการเข้าถึงส่วนต่าง ๆ ของโปรแกรมได้อย่างชัดเจน
