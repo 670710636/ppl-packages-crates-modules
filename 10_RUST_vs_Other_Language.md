@@ -201,24 +201,17 @@ main.py
 
 จากตัวอย่างจะเห็นว่าทั้ง 4 ภาษาใช้แนวคิด **Modularity** เพื่อแบ่งโปรแกรมออกเป็นส่วนย่อยเหมือนกัน แต่ใช้กลไกต่างกัน
 
+```text
 
-**Rust**              **Java**
+Rust                    Java
 Package                 Package
 └── Crate               └── Class
     └── Module              └── Method
         └── Function
 
 
-**C**                 **Python**
+C                       Python
 Header + Source         Package
 └── Function            └── Module
                             └── Function / Class
 ```
-
-**Rust** มี Package, Crate และ Module System เป็นโครงสร้างที่รองรับโดยภาษา และใช้ `pub` ควบคุม Visibility โดย Compiler สามารถตรวจสอบ Scope และการเข้าถึงได้ตั้งแต่ Compile Time
-
-**Java** เน้น Package และ Class/Interface และใช้ Access Modifier เช่น `public`, `private` และ `protected` เพื่อควบคุมการเข้าถึง
-
-**C** ไม่มี Module System แบบ Rust โดยตรง แต่ใช้ Source File, Header File, Scope และ Linkage ในการแบ่ง Interface และ Implementation
-
-**Python** ใช้ไฟล์ `.py` เป็น Module และ `import` เพื่อนำ Module มาใช้ แต่ไม่มี Visibility Control ที่บังคับแบบ `pub` ของ Rust โดยมักใช้ Convention เช่น `_name`
