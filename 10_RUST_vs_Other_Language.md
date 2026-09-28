@@ -201,15 +201,15 @@ main.py
 
 จากตัวอย่างจะเห็นว่าทั้ง 4 ภาษาใช้แนวคิด **Modularity** เพื่อแบ่งโปรแกรมออกเป็นส่วนย่อยเหมือนกัน แต่ใช้กลไกต่างกัน
 
-```text
-Rust                    Java
+
+**Rust**              **Java**
 Package                 Package
 └── Crate               └── Class
     └── Module              └── Method
         └── Function
 
 
-C                       Python
+**C**                 **Python**
 Header + Source         Package
 └── Function            └── Module
                             └── Function / Class
@@ -222,5 +222,3 @@ Header + Source         Package
 **C** ไม่มี Module System แบบ Rust โดยตรง แต่ใช้ Source File, Header File, Scope และ Linkage ในการแบ่ง Interface และ Implementation
 
 **Python** ใช้ไฟล์ `.py` เป็น Module และ `import` เพื่อนำ Module มาใช้ แต่ไม่มี Visibility Control ที่บังคับแบบ `pub` ของ Rust โดยมักใช้ Convention เช่น `_name`
-
-ในมุมมอง PPL ความแตกต่างสำคัญของ Rust คือการรวม **Modularity, Namespace, Scope, Visibility และ Information Hiding** เข้ากับการตรวจสอบของ Compiler และยังทำงานร่วมกับ **Ownership และ Borrowing** เพื่อเพิ่ม Compile-time และ Memory Safety
